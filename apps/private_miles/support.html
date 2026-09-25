@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Private Miles — Support &amp; Help</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #e5e5e5;
+    --accent: #2563eb;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #f2f2f2;
+      --muted: #a0a0a0;
+      --border: #333333;
+      --accent: #6ea8fe;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 56px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  h2 .emoji {
+    margin-right: 4px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+  }
+  p, li { color: var(--text); font-size: 16px; }
+  p.intro { font-size: 16px; color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  nav.toc {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+  }
+  nav.toc p { margin: 0 0 8px; font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc li { margin-bottom: 4px; }
+  .tip {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  code {
+    background: var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support &amp; Help</h1>
+  <p class="subtitle">Support guide for using Private Miles.</p>
+
+  <p class="intro">
+    Private Miles is a simple, private way to track your runs, walks, and rides. Everything
+    below explains what each screen does and how to use it — no technical knowledge needed.
+    If you've never used the app before, start with the Start screen below.
+  </p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#welcome">Welcome screen</a></li>
+      <li><a href="#start">Start screen</a></li>
+      <li><a href="#history">History screen</a></li>
+      <li><a href="#statistics">Statistics screen</a></li>
+      <li><a href="#settings">Settings screen</a></li>
+      <li><a href="#getting-help">Still stuck?</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="welcome"><span class="emoji">👋</span>Welcome screen</h2>
+  <p>
+    The first time you open Private Miles, you'll see a short welcome screen introducing the
+    app. Tap <strong>Get started</strong> to move on to the main app. You won't see this screen
+    again unless you reset the app from Settings (more on that below).
+  </p>
+
+  <h2 id="start"><span class="emoji">🏃</span>Start screen</h2>
+  <p>
+    This is the screen you'll use every time you head out. It's where you set up and begin
+    tracking an exercise. You can always get back here by opening the menu (the three lines in
+    the top-left corner) and choosing <strong>Start</strong>.
+  </p>
+
+  <h3>Choosing what you're doing</h3>
+  <p>
+    Use the <strong>Exercise type</strong> dropdown to choose Running, Walking, Cycling, or any
+    custom type you've added in Settings.
+  </p>
+
+  <h3>Picking a regular route (optional)</h3>
+  <p>
+    If you've saved routes before, they'll appear under <strong>My regular routes</strong>. Pick
+    one if you're doing a route you've done before, or leave it set to "No route" if not — you
+    can always name and save the route afterwards instead.
+  </p>
+
+  <h3>Voice prompts (optional)</h3>
+  <p>
+    Turn this on if you'd like the app to speak your progress out loud while you exercise, so
+    you don't need to check your phone. Once switched on, you can choose to be told your
+    progress:
+  </p>
+  <ul>
+    <li><strong>By time</strong> — for example, every 5 minutes.</li>
+    <li><strong>By distance</strong> — for example, every 1 kilometre or mile.</li>
+  </ul>
+  <p>
+    You can turn either or both on, and adjust how often they announce using the − and + buttons.
+    The app will always speak a final summary when you finish, too.
+  </p>
+
+  <h3>Countdown before you start (optional)</h3>
+  <p>
+    Turn this on if you'd like a few seconds' warning before tracking begins — handy for putting
+    your phone away first. Choose how many seconds (10 by default). Once you tap Start, a large
+    countdown appears on screen, and you'll hear three beeps in the final three seconds before
+    tracking starts. You can tap <strong>Cancel</strong> during the countdown if you change your
+    mind.
+  </p>
+
+  <h3>Starting</h3>
+  <p>
+    Tap the big <strong>Start</strong> button at the bottom. The first time you do this, your
+    phone will ask permission to use your location — this is needed so the app can record your
+    route and distance. Choose "Allow" (or "Allow While Using App").
+  </p>
+
+  <h3>While you're exercising</h3>
+  <p>
+    You'll see your elapsed time and distance updating live. Two buttons are available:
+  </p>
+  <ul>
+    <li><strong>Pause</strong> — temporarily stops the clock and tracking. Useful for traffic
+      lights, water breaks, and so on. Tap <strong>Continue</strong> to carry on, or
+      <strong>Cancel</strong> to abandon the exercise entirely without saving it.</li>
+    <li><strong>Stop</strong> — ends the exercise and takes you to the finish screen below.</li>
+  </ul>
+
+  <h3>Finishing an exercise</h3>
+  <p>After you tap Stop, you'll see a summary screen where you can:</p>
+  <ul>
+    <li>See a map of the route you took (if location was captured), along with your total
+      distance, time, and pace.</li>
+    <li>Expand <strong>Splits</strong> to see your pace for each individual kilometre or mile
+      (whichever unit you use — see Settings).</li>
+    <li>Choose an existing regular route from the dropdown, or leave it as "No route" and type a
+      name to save this as a new regular route for next time.</li>
+    <li>Add a short note about how it went, if you like.</li>
+  </ul>
+  <p>
+    Finally, tap <strong>Save</strong> to keep the activity, or <strong>Discard</strong> if you
+    don't want to keep it (you'll be asked to confirm first).
+  </p>
+
+  <h2 id="history"><span class="emoji">📖</span>History screen</h2>
+  <p>
+    This screen lists every exercise you've saved, most recent first. Tap the menu and choose
+    <strong>History</strong> to get there.
+  </p>
+
+  <h3>Finding a past activity</h3>
+  <p>Use the filters at the top to narrow the list down:</p>
+  <ul>
+    <li><strong>Exercise type</strong> and <strong>Route</strong> dropdowns.</li>
+    <li><strong>From</strong> / <strong>To</strong> dates — defaults to the last year.</li>
+    <li><strong>Min</strong> / <strong>Max</strong> distance.</li>
+  </ul>
+  <p>Tap <strong>Clear all</strong> to remove every filter and see everything again.</p>
+
+  <h3>Viewing the details of an activity</h3>
+  <p>
+    Tap anywhere on an activity card to expand it. This reveals the route on a map (if one was
+    recorded), any notes you added, and a <strong>Splits</strong> section you can tap to reveal
+    your per-kilometre or per-mile pace for that activity.
+  </p>
+
+  <h3>Deleting an activity</h3>
+  <p>
+    Tap the <strong>✕</strong> next to the date on any activity card to delete it. You'll be
+    asked to confirm, since this can't be undone.
+  </p>
+
+  <h2 id="statistics"><span class="emoji">📊</span>Statistics screen</h2>
+  <p>
+    This screen shows how you're doing overall. Tap the menu and choose
+    <strong>Statistics</strong>.
+  </p>
+
+  <h3>Date range</h3>
+  <p>
+    Use the <strong>From</strong> / <strong>To</strong> dates at the top to choose which period
+    the totals below cover (defaults to the last year). Tap <strong>Clear all</strong> to see
+    stats for all time.
+  </p>
+
+  <h3>Overall totals</h3>
+  <p>
+    A summary of your total activities, distance, time, and average pace for the selected date
+    range.
+  </p>
+
+  <h3>By exercise type</h3>
+  <p>The same totals, broken down separately for Running, Walking, Cycling, and any custom types.</p>
+
+  <h3>Route history</h3>
+  <p>
+    If you've saved any regular routes, pick one from the dropdown here to see a graph of how
+    long each time you've done that route took — a simple way to see whether you're getting
+    faster on your regular routes over time. This graph always shows your entire history on that
+    route, regardless of the date range set above.
+  </p>
+
+  <h2 id="settings"><span class="emoji">⚙️</span>Settings screen</h2>
+  <p>
+    Tap the menu and choose <strong>Settings</strong> to personalise the app. Each section below
+    has its own ⓘ icon you can tap for a quick reminder of what it does.
+  </p>
+
+  <h3>Exercise types</h3>
+  <p>
+    Running, Walking, and Cycling are always available. Add your own (e.g. "Hiking" or "Rowing")
+    using the text box and <strong>Add</strong> button. You can remove any type you've added
+    yourself at any time — your past activities of that type are kept, they just won't offer
+    that type when starting a new exercise unless you add it back.
+  </p>
+
+  <h3>Regular routes</h3>
+  <p>
+    Pick a saved route from the dropdown and tap <strong>Delete route</strong> to remove it. Past
+    activities that used that route are kept — they'll just show no route afterwards.
+  </p>
+
+  <h3>Appearance</h3>
+  <p>Switch between dark and light mode to suit your preference.</p>
+
+  <h3>Units</h3>
+  <p>Choose whether distances are shown in kilometres or miles throughout the app.</p>
+
+  <h3>Backup &amp; restore</h3>
+  <p>
+    <strong>Export backup</strong> saves a copy of all your data to a file, which you can then
+    save anywhere you like — your phone, a cloud storage app, email, wherever you choose. Nobody
+    but you ever sees this file.
+  </p>
+  <p>
+    <strong>Restore backup</strong> lets you pick a previously exported file and load it back in.
+    This replaces everything currently in the app, so you'll be asked to confirm first.
+  </p>
+  <div class="tip">
+    Tip: it's worth taking a backup every so often, and definitely before resetting the app (see
+    below).
+  </div>
+
+  <h3>Backup reminders</h3>
+  <p>
+    Turn this on to get an occasional reminder notification to back up your data, and choose how
+    often (e.g. every 2 weeks).
+  </p>
+
+  <h3>Purge old activities</h3>
+  <p>
+    Lets you bulk-delete older activities you no longer need — useful for freeing up space.
+    Choose a cut-off date (everything older than that is affected) and, optionally, a single
+    exercise type to limit it to. The screen shows how many activities match before you confirm
+    anything. You'll be offered the chance to back up first, and asked to confirm the exact
+    number of activities that will be deleted before anything happens.
+  </p>
+
+  <h3>Reset app</h3>
+  <p>
+    Completely wipes the app — every activity, route, and custom exercise type — and returns all
+    settings to their defaults. This cannot be undone, and the app will check whether you've
+    backed up recently before letting you proceed.
+  </p>
+
+  <h3>About</h3>
+  <p>
+    Contains a link to our full <a href="./privacy-policy.html">Privacy Policy</a>, which
+    explains in detail how your data is (and isn't) handled.
+  </p>
+
+  <h2 id="getting-help"><span class="emoji">💬</span>Still stuck?</h2>
+  <div class="card">
+    <p>
+      If something in the app isn't working the way this guide describes, or you have a question
+      that isn't answered here, please get in touch at
+      <a href="mailto:sgsec@tutanota.com">sgsec@tutanota.com</a>.
+    </p>
+  </div>
+</main>
+</body>
+</html>
