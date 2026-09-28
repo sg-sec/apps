@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simple Reading Log — Support &amp; Help</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #e5e5e5;
+    --accent: #2563eb;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #f2f2f2;
+      --muted: #a0a0a0;
+      --border: #333333;
+      --accent: #6ea8fe;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 56px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  h2 .emoji {
+    margin-right: 4px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+  }
+  p, li { color: var(--text); font-size: 16px; }
+  p.intro { font-size: 16px; color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  nav.toc {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+  }
+  nav.toc p { margin: 0 0 8px; font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc li { margin-bottom: 4px; }
+  .tip {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  code {
+    background: var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support &amp; Help</h1>
+  <p class="subtitle">Support guide for using Simple Reading Log.</p>
+
+  <p class="intro">
+    Simple Reading Log is a simple, private way to keep track of the books you've read — no
+    account, no cloud sync. Everything below explains what each screen does and how to use it, no
+    technical knowledge needed. If you've never used the app before, start with the Welcome screen
+    below.
+  </p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#welcome">Welcome screen</a></li>
+      <li><a href="#home">Home screen</a></li>
+      <li><a href="#add-new-book">Add New Book screen</a></li>
+      <li><a href="#backlog">Backlog screen</a></li>
+      <li><a href="#history">History screen</a></li>
+      <li><a href="#edit-book">Edit Book screen</a></li>
+      <li><a href="#statistics">Statistics screen</a></li>
+      <li><a href="#settings">Settings screen</a></li>
+      <li><a href="#getting-help">Still stuck?</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="welcome"><span class="emoji">👋</span>Welcome screen</h2>
+  <p>
+    The first time you open Simple Reading Log, you'll see a short welcome screen introducing the
+    app. Tap <strong>Next</strong> to move on to the main app. You won't see this screen again
+    unless you reset the app from Settings (more on that below).
+  </p>
+
+  <h2 id="home"><span class="emoji">🏠</span>Home screen</h2>
+  <p>
+    This is the screen you land on every time you open the app. It shows the books you're
+    currently reading (status "In progress"), newest first. You can always get back here by
+    opening the menu (the three lines in the top-left corner) and choosing <strong>Home</strong>.
+  </p>
+  <ul>
+    <li>Tap <strong>+ Add New Book</strong> at the top to log a new book.</li>
+    <li>Tap any book tile to open it on the Edit Book screen.</li>
+  </ul>
+  <p>If you haven't added any books yet, you'll see a short prompt here instead of an empty list.</p>
+
+  <h2 id="add-new-book"><span class="emoji">📚</span>Add New Book screen</h2>
+  <p>
+    Tap the menu and choose <strong>Add New Book</strong>, or use the button on the Home screen.
+    You'll first be asked how you'd like to add the book:
+  </p>
+  <ul>
+    <li><strong>Add Manually</strong> — always available. Type in the book's details yourself.</li>
+    <li><strong>Search Open Library</strong> — look up a book by title, author, or ISBN and have
+      the title and author filled in for you. This option only appears if you've turned it on in
+      Settings <em>and</em> the app can currently reach Open Library. If it's greyed out, a short
+      note explains why, along with a <strong>Retry</strong> button to check again.</li>
+  </ul>
+
+  <h3>Filling in the details</h3>
+  <p>Whichever way you start, you'll land on the same form:</p>
+  <ul>
+    <li><strong>Title</strong> and <strong>Author</strong> — both required. As you type an author,
+      matching names already in your library appear below the field so you can reuse one instead
+      of retyping it.</li>
+    <li><strong>Genre</strong> — tap to open a tick-box list. Your five most recently used genres
+      appear at the top, followed by the full list.</li>
+    <li><strong>Medium</strong> — Book, E-Book, or Audio-Book.</li>
+    <li><strong>Status</strong> — To be read, or In progress. (Completed and Abandoned are set
+      later, from the Edit Book screen, once you've actually finished or given up on it.)</li>
+  </ul>
+  <p>
+    Tap <strong>Save</strong> when you're done, or <strong>Cancel</strong> to discard it. If a book
+    with the same title and author already exists in your library, you'll be warned before saving
+    a duplicate — useful for catching typos, but you can still save it anyway if it's genuinely a
+    different edition or a re-read.
+  </p>
+
+  <h2 id="backlog"><span class="emoji">📋</span>Backlog screen</h2>
+  <p>
+    Lists every book you've added with status "To be read" — the ones waiting in line. Tap the
+    menu and choose <strong>Backlog</strong>.
+  </p>
+  <p>
+    Tap <strong>Filters</strong> to narrow the list by <strong>Author</strong> or
+    <strong>Medium</strong>. Tap any book tile to open it on the Edit Book screen — typically to
+    change its status to "In progress" once you start reading it.
+  </p>
+
+  <h2 id="history"><span class="emoji">📖</span>History screen</h2>
+  <p>
+    Lists every book you've finished or abandoned. Tap the menu and choose
+    <strong>History</strong>.
+  </p>
+  <p>Tap <strong>Filters</strong> to narrow the list down by:</p>
+  <ul>
+    <li><strong>Date range finished</strong> — From / To dates.</li>
+    <li><strong>Author</strong>.</li>
+    <li><strong>Rating</strong>.</li>
+    <li><strong>Completion type</strong> — Completed or Abandoned.</li>
+    <li><strong>Medium</strong>.</li>
+  </ul>
+  <p>Tap <strong>Clear All</strong> in the filter sheet to remove every filter and see everything again. Tap any book tile to open it on the Edit Book screen.</p>
+
+  <h2 id="edit-book"><span class="emoji">✏️</span>Edit Book screen</h2>
+  <p>
+    Opened by tapping any book tile on Home, Backlog, or History. It has the same fields as Add
+    New Book, plus:
+  </p>
+  <ul>
+    <li><strong>Status</strong> now also offers Completed and Abandoned. Choosing either one
+      automatically records today as the end date.</li>
+    <li><strong>Rating</strong> — tap a star to rate the book 0–5.</li>
+    <li><strong>Notes</strong> — anything you'd like to remember about it.</li>
+  </ul>
+  <p>
+    Tap <strong>Save</strong> to keep your changes, or <strong>Cancel</strong> to discard them. Tap
+    <strong>Delete Book</strong> at the bottom to remove it permanently — you'll be asked to
+    confirm first, since this can't be undone.
+  </p>
+
+  <h2 id="statistics"><span class="emoji">📊</span>Statistics screen</h2>
+  <p>Tap the menu and choose <strong>Statistics</strong> to see how your reading is going.</p>
+
+  <h3>Books completed by month</h3>
+  <p>Two grids — this year and last year — each showing how many books you finished in every month.</p>
+
+  <h3>Genre breakdown</h3>
+  <p>
+    A pie chart of your genres. Use the <strong>This Year</strong> / <strong>Last Year</strong> /
+    <strong>All-Time</strong> toggle above it to change the period it covers.
+  </p>
+
+  <h3>Favourite author</h3>
+  <p>
+    A ranked list of your authors. This isn't just a simple average rating — an author with a
+    single 5-star book won't automatically outrank one with six books averaging 4.5 stars. The
+    ranking blends each author's average with your overall average across all books, weighted by
+    how many books they have, so it takes more than one high score to top the list.
+  </p>
+
+  <h2 id="settings"><span class="emoji">⚙️</span>Settings screen</h2>
+  <p>
+    Tap the menu and choose <strong>Settings</strong> to personalise the app. Each section below
+    has its own ⓘ icon you can tap for a quick reminder of what it does.
+  </p>
+
+  <h3>Open Library API</h3>
+  <p>
+    Turns on the "Search Open Library" option on the Add New Book screen. Only the title or author
+    you type into a search is ever sent to Open Library — nothing else in your library.
+  </p>
+
+  <h3>Genres</h3>
+  <p>
+    Shows the app's predefined genre list, plus any you've added yourself. Add your own using the
+    text box and <strong>Add</strong> button. You can remove any genre you've added yourself at any
+    time by tapping the ✕ on its chip — you'll be asked to confirm, and any books currently tagged
+    with it will simply no longer have that genre. The predefined genres can't be removed.
+  </p>
+
+  <h3>Appearance</h3>
+  <p>Switch between light and dark mode to suit your preference.</p>
+
+  <h3>Import books</h3>
+  <p>
+    Tap <strong>Export Template CSV</strong> to get a starter file with the correct columns and
+    date format, fill it in with books you've already read, then tap
+    <strong>Import from CSV</strong> to bring them in. The app checks the file's format before
+    importing anything.
+  </p>
+
+  <h3>Backup &amp; restore</h3>
+  <p>
+    Shows when you last backed up. <strong>Export backup</strong> saves a copy of all your books,
+    authors, genres, and settings to a file, which you can then save anywhere you like — your
+    phone, a cloud storage app, email, wherever you choose. Nobody but you ever sees this file.
+  </p>
+  <p>
+    <strong>Restore backup</strong> lets you pick a previously exported file and load it back in.
+    This replaces everything currently in the app, so you'll be asked to confirm first.
+  </p>
+  <div class="tip">
+    Tip: it's worth taking a backup every so often, and definitely before resetting the app (see
+    below).
+  </div>
+
+  <h3>Backup reminders</h3>
+  <p>
+    Turn this on to get an occasional on-screen reminder to back up your data when you open the
+    app, and choose how often — weekly, monthly, or annually.
+  </p>
+
+  <h3>Reset app</h3>
+  <p>
+    Permanently erases every book, author, genre, and setting, returning the app to how it was on
+    first install. This cannot be undone, and you'll be offered the chance to back up first before
+    it happens.
+  </p>
+
+  <h3>About</h3>
+  <p>
+    Contains a link to our full <a href="./privacy-policy.html">Privacy Policy</a>, which explains
+    in detail how your data is (and isn't) handled.
+  </p>
+
+  <h2 id="getting-help"><span class="emoji">💬</span>Still stuck?</h2>
+  <div class="card">
+    <p>
+      If something in the app isn't working the way this guide describes, or you have a question
+      that isn't answered here, please get in touch at
+      <a href="mailto:sgsec@tutanota.com">sgsec@tutanota.com</a>.
+    </p>
+  </div>
+</main>
+</body>
+</html>
