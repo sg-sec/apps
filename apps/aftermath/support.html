@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aftermath – Support &amp; Help</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #e5e5e5;
+    --accent: #2563eb;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #f2f2f2;
+      --muted: #a0a0a0;
+      --border: #333333;
+      --accent: #6ea8fe;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 56px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  h2 .emoji {
+    margin-right: 4px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+  }
+  p, li { color: var(--text); font-size: 16px; }
+  p.intro { font-size: 16px; color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  nav.toc {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+  }
+  nav.toc p { margin: 0 0 8px; font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc li { margin-bottom: 4px; }
+  .tip {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support &amp; Help</h1>
+  <p class="subtitle">Support guide for using Aftermath: Money Left to Spend.</p>
+
+  <p class="intro">
+    Aftermath is a simple, private way to see how much money you really have left to spend
+    between one payday and the next, once everything you still owe has been taken into account.
+    Everything below explains what each screen does and how to use it – no technical knowledge
+    needed. If you've never used the app before, start with Getting started below.
+  </p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#getting-started">Getting started</a></li>
+      <li><a href="#home">Home screen</a></li>
+      <li><a href="#recurring">Recurring Expenses screen</a></li>
+      <li><a href="#new-period">Starting a new pay period</a></li>
+      <li><a href="#history">History screen</a></li>
+      <li><a href="#forecast">Forecast screen</a></li>
+      <li><a href="#settings">Settings screen</a></li>
+      <li><a href="#getting-help">Still stuck?</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="getting-started"><span class="emoji">👋</span>Getting started</h2>
+  <p>
+    The first time you open Aftermath, a short set-up guide walks you through everything the app
+    needs. Each step shows a tip first – tap <strong>OK</strong> to dismiss it and carry on.
+    You won't see the guide again unless you reset the app from Settings (more on that below).
+  </p>
+
+  <h3>1. Welcome</h3>
+  <p>
+    A quick introduction to the app. Tap <strong>Next</strong> to begin set-up. If you've used
+    Aftermath before and have a backup file, tap <strong>Restore from backup</strong> instead –
+    this loads your backup and takes you straight to the Home screen, skipping the rest of the
+    guide.
+  </p>
+
+  <h3>2. How do you get paid?</h3>
+  <p>
+    Everything in Aftermath is organised around your <strong>pay period</strong> – the time from
+    one payday to the next – rather than a calendar month. Choose how often you're paid:
+  </p>
+  <ul>
+    <li><strong>Weekly</strong> – pick the day of the week you're paid.</li>
+    <li><strong>Fortnightly</strong> – pick the day of the week you're paid, plus the date of
+      any recent payment, so the app knows which weeks your paydays fall in.</li>
+    <li><strong>Semi-monthly</strong> – pick the two days of the month you're paid (for
+      example, the 1st and the 16th).</li>
+    <li><strong>Monthly</strong> – choose a specific day of the month, the last working day of
+      the month (Monday to Friday), or the last occurrence of a particular day (for example,
+      the last Friday).</li>
+  </ul>
+  <p>
+    Your payday is always the first day of a new pay period. If you choose a day that doesn't
+    exist in some months (such as the 31st), the app uses the last day of that month instead.
+  </p>
+
+  <h3>3. Starting balance &amp; currency</h3>
+  <p>
+    Enter roughly how much you're paid each period. Don't worry if it varies – it's just used to
+    fill in the starting balance for each new pay period, and you can adjust it every time.
+    Then set your currency symbol (for example £, $ or €).
+  </p>
+
+  <h3>4. Recurring expenses</h3>
+  <p>
+    Next, the guide takes you to the real Recurring Expenses screen so you can add a few of your
+    regular bills. You don't have to enter them all now – add some so you can see how things
+    work, then tap <strong>Next</strong>. See the
+    <a href="#recurring">Recurring Expenses screen</a> section for how to add them.
+  </p>
+
+  <h3>5. Home</h3>
+  <p>
+    Finally, you'll be shown around the Home screen with a few more tips. Once you've dismissed
+    the last one, you're all set. While the guide is running, the menu is dimmed so you can't
+    wander off part-way through.
+  </p>
+
+  <h2 id="home"><span class="emoji">🏠</span>Home screen</h2>
+  <p>
+    This is the main screen and the one you'll use most. Its title shows the dates of your
+    current pay period (for example, "12 Jul – 25 Jul 2026"). You can always get back here by
+    opening the menu (the three lines in the top-left corner) and choosing the pay period at the
+    top.
+  </p>
+
+  <h3>Current balance</h3>
+  <p>
+    The large figure at the top. Tap it to type in a new amount – it should match what your bank
+    account shows right now. Update it whenever you check your bank balance.
+  </p>
+
+  <h3>Estimated remainder</h3>
+  <p>
+    The figure underneath is the heart of the app: your current balance, minus every expense
+    still left to pay this period. In other words, how much you really have left to spend (or
+    save). It updates automatically as you make changes, and turns red if you're heading into
+    the negative.
+  </p>
+
+  <h3>Recurring expenses</h3>
+  <p>
+    Your regular bills that fall due during this pay period, filled in automatically from the
+    Recurring Expenses screen and listed in the order they're due. Each has an amount you can
+    tap to change for this period only – for example, if this month's electricity bill came in
+    higher than usual.
+  </p>
+
+  <h3>Ad hoc expenses</h3>
+  <p>
+    One-off or irregular costs for this period – think birthdays, car repairs, a big purchase, or
+    your food shop. Tap <strong>+ Add ad hoc expense</strong>, give it a name and an amount. Ad
+    hoc expenses belong to the current period only: the list starts empty again each new pay
+    period. Tap the red bin icon to delete one (you'll be asked to confirm).
+  </p>
+
+  <h3>Marking an expense as paid</h3>
+  <p>
+    Once you've paid something, tap the <strong>✓</strong> button next to it. This sets its
+    amount to zero, so it no longer counts against your remainder. You can also just type in a
+    smaller amount if you've paid part of it. Changing an expense only changes your remainder –
+    it never changes your current balance, since that should always come from your bank.
+  </p>
+  <div class="tip">
+    Tip: a typical routine is to pay a bill, tick it off, then update your current balance to
+    match your bank. Your remainder then shows exactly what's still free to spend.
+  </div>
+
+  <h3>Hide completed expenses</h3>
+  <p>
+    Turn this switch on to hide anything already marked as paid, so the lists only show what's
+    still outstanding. The app remembers your choice.
+  </p>
+
+  <h2 id="recurring"><span class="emoji">🔁</span>Recurring Expenses screen</h2>
+  <p>
+    This is where you keep your list of regular bills – rent, subscriptions, insurance and so on.
+    Tap the menu and choose <strong>Recurring Expenses</strong>. The app uses this list to fill in
+    the Home screen automatically at the start of each pay period.
+  </p>
+
+  <h3>Adding an expense</h3>
+  <p>Tap <strong>+ Add expense</strong> at the bottom of the list, then fill in:</p>
+  <ul>
+    <li><strong>Name</strong> and <strong>Amount</strong>.</li>
+    <li><strong>Frequency</strong> – Weekly, Monthly or Annual. This is separate from how often
+      you're paid, so you can be paid weekly and still have a monthly rent payment.</li>
+    <li><strong>When it's due</strong> – the day of the week (weekly), the day of the month
+      (monthly), or the month and day (annual).</li>
+    <li><strong>Start date</strong> and, optionally, an <strong>end date</strong> (tick
+      <strong>Has end date</strong>) for something that stops, such as a loan's final
+      payment.</li>
+  </ul>
+  <p>Tap <strong>Save</strong>. If the new expense falls due in your current pay period, it
+    appears on the Home screen straight away.</p>
+
+  <h3>How expenses land in your pay periods</h3>
+  <ul>
+    <li>A <strong>weekly</strong> expense is counted once for every time its day falls in the
+      pay period – so a £10 weekly expense in a pay period with four Fridays shows as £40.</li>
+    <li>A <strong>monthly</strong> expense appears in whichever pay period contains its due day.
+      If you're paid weekly or fortnightly, that means it shows in just one of the periods that
+      make up the month.</li>
+    <li>An <strong>annual</strong> expense appears only in the pay period that contains its due
+      date.</li>
+  </ul>
+
+  <h3>Editing or deleting an expense</h3>
+  <p>
+    Tap an expense to edit it, or tap the red bin icon to delete it (you'll be asked to confirm).
+    Changes and deletions here take effect from your <strong>next</strong> pay period – the
+    current period on the Home screen is left as it is, so you can adjust that directly if you
+    need to.
+  </p>
+
+  <h3>Filtering and reordering</h3>
+  <p>
+    Use the <strong>All / Weekly / Monthly / Annual</strong> buttons at the top to show just one
+    type. While viewing All, you can drag an expense up or down using the <strong>≡</strong>
+    handle on the right to rearrange the list.
+  </p>
+
+  <h2 id="new-period"><span class="emoji">📅</span>Starting a new pay period</h2>
+  <p>
+    When your current pay period ends, the next time you open the Home screen Aftermath will ask
+    whether you'd like to start the new one. It never does this without asking.
+  </p>
+  <ul>
+    <li>Tap <strong>Start new period</strong>, then check or adjust the starting balance (it's
+      filled in from your default in Settings) and tap <strong>Confirm</strong>.</li>
+    <li>The period that just ended is saved to History exactly as it stood.</li>
+    <li>The new period's recurring expenses are filled in from your Recurring Expenses list, and
+      the ad hoc list starts empty.</li>
+  </ul>
+  <p>
+    If you're not ready (for example, your pay hasn't arrived yet), tap <strong>Not yet</strong>.
+    You'll be asked again the next time you return to the Home screen.
+  </p>
+
+  <h2 id="history"><span class="emoji">📖</span>History screen</h2>
+  <p>
+    A record of every pay period you've finished, most recent first. Tap the menu and choose
+    <strong>History</strong>. It stays empty until your first pay period has ended and you've
+    started the next one.
+  </p>
+  <p>
+    Each period shows its dates and closing balance. Tap a period to expand it and see its final
+    remainder plus the full list of recurring and ad hoc expenses as they stood when it ended.
+    History is read-only, so nothing here can be changed by accident.
+  </p>
+
+  <h2 id="forecast"><span class="emoji">🔮</span>Forecast screen</h2>
+  <p>
+    A look ahead at future pay periods, to help you spot an expensive month coming. Tap the menu
+    and choose <strong>Forecast</strong>. It has a purple tint to remind you it's a projection,
+    not real figures.
+  </p>
+  <ul>
+    <li>Use <strong>‹ Prev</strong> and <strong>Next ›</strong> to move between future pay
+      periods.</li>
+    <li>Each forecast starts from your default starting balance (from Settings) and subtracts the
+      recurring expenses due in that period, giving a <strong>projected remainder</strong>.</li>
+    <li>Weekly expenses that occur more than once show how many times, e.g. "(×4)".</li>
+    <li>Ad hoc expenses aren't included, since there's no way to know them in advance.</li>
+  </ul>
+  <p>Nothing on this screen is saved, and it never affects your Home screen or History.</p>
+
+  <h2 id="settings"><span class="emoji">⚙️</span>Settings screen</h2>
+  <p>
+    Tap the menu and choose <strong>Settings</strong> to personalise the app. Each section has its
+    own ⓘ icon you can tap for a quick reminder of what it does.
+  </p>
+
+  <h3>Appearance</h3>
+  <p>
+    Choose <strong>Light</strong> or <strong>Dark</strong>, or <strong>System</strong> to follow
+    your phone's own setting.
+  </p>
+
+  <h3>Balance &amp; currency</h3>
+  <p>
+    Change the default starting balance used when a new pay period begins, and the currency
+    symbol shown next to every amount.
+  </p>
+
+  <h3>Pay frequency</h3>
+  <p>
+    Change how often you're paid, using the same options as during set-up, then tap
+    <strong>Save pay frequency</strong>. This ends your current pay period straight away – it's
+    saved to History as it stands – and starts a new one under the new schedule, asking you for
+    a starting balance just like a normal new period.
+  </p>
+
+  <h3>Backup &amp; restore</h3>
+  <p>
+    Aftermath keeps your data only on your phone, so a backup is the only way to get it back if
+    your phone is lost, replaced or reset. The line at the top shows when you last backed up.
+  </p>
+  <p>
+    <strong>Export backup</strong> saves a copy of your data to a file, which you can then save
+    anywhere you like – your phone, a cloud storage app, email, wherever you choose. You'll be
+    asked what to include:
+  </p>
+  <ul>
+    <li><strong>Full backup</strong> – everything, including your current pay period and all of
+      your History.</li>
+    <li><strong>Configuration only</strong> – just your settings and Recurring Expenses list.
+      Handy for setting the app up the same way on another phone without bringing your figures
+      along.</li>
+  </ul>
+  <p>
+    <strong>Restore backup</strong> lets you pick a previously exported file and load it back in.
+    This replaces whatever the backup contains (for a configuration-only backup, just your
+    settings and Recurring Expenses), so you'll be asked to confirm first.
+  </p>
+  <div class="tip">
+    Tip: backup files contain your financial figures and aren't encrypted, so keep them
+    somewhere you trust.
+  </div>
+
+  <h3>Backup reminders</h3>
+  <p>
+    Turn this on to be reminded to back up, and use the − and + buttons with
+    <strong>week</strong>, <strong>month</strong> or <strong>year</strong> to choose how often
+    (for example, every 2 weeks). When a backup is due, the app shows a reminder the next time
+    you open it, with the option to back up there and then or be reminded later. These reminders
+    appear inside the app only – they aren't phone notifications.
+  </p>
+
+  <h3>Reset app</h3>
+  <p>
+    Completely wipes the app – your Recurring Expenses, current pay period and all History – and
+    returns every setting to its default, then runs the set-up guide again. This cannot be
+    undone. If you haven't backed up recently, the app will offer to make a backup first.
+  </p>
+
+  <h3>About</h3>
+  <p>
+    Contains a link to our full <a href="./privacy-policy.html">Privacy Policy</a>, which
+    explains in detail how your data is (and isn't) handled, and a link back to this page.
+  </p>
+
+  <h2 id="getting-help"><span class="emoji">💬</span>Still stuck?</h2>
+  <div class="card">
+    <p>
+      If something in the app isn't working the way this guide describes, or you have a question
+      that isn't answered here, please get in touch at
+      <a href="mailto:sgsec@tutanota.com">sgsec@tutanota.com</a>.
+    </p>
+  </div>
+</main>
+</body>
+</html>
