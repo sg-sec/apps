@@ -120,6 +120,7 @@
       <li><a href="#add-new-book">Add New Book screen</a></li>
       <li><a href="#backlog">Backlog screen</a></li>
       <li><a href="#history">History screen</a></li>
+      <li><a href="#series">Series screen</a></li>
       <li><a href="#edit-book">Edit Book screen</a></li>
       <li><a href="#statistics">Statistics screen</a></li>
       <li><a href="#settings">Settings screen</a></li>
@@ -145,6 +146,11 @@
     <li>Tap any book tile to open it on the Edit Book screen.</li>
   </ul>
   <p>If you haven't added any books yet, you'll see a short prompt here instead of an empty list.</p>
+  <p>
+    If a book is part of a series, its series name (and position, if you set one — e.g. "#2")
+    appears under the author on its tile. This is the same wherever book tiles show up: Home,
+    Backlog, History, and a series' own book list on the Series screen.
+  </p>
 
   <h2 id="add-new-book"><span class="emoji">📚</span>Add New Book screen</h2>
   <p>
@@ -165,6 +171,10 @@
     <li><strong>Title</strong> and <strong>Author</strong> — both required. As you type an author,
       matching names already in your library appear below the field so you can reuse one instead
       of retyping it.</li>
+    <li><strong>Series</strong> (optional) — if the book's part of a series, start typing its name;
+      matching series you've already added appear below the field, or keep typing to create a new
+      one. You can also give its <strong>position</strong> in the series (e.g. "2"), shown as "#2"
+      next to the book wherever it appears.</li>
     <li><strong>Genre</strong> — tap to open a tick-box list. Your five most recently used genres
       appear at the top, followed by the full list.</li>
     <li><strong>Medium</strong> — Book, E-Book, or Audio-Book.</li>
@@ -184,9 +194,9 @@
     menu and choose <strong>Backlog</strong>.
   </p>
   <p>
-    Tap <strong>Filters</strong> to narrow the list by <strong>Author</strong> or
-    <strong>Medium</strong>. Tap any book tile to open it on the Edit Book screen — typically to
-    change its status to "In progress" once you start reading it.
+    Tap <strong>Filters</strong> to narrow the list by <strong>Author</strong>,
+    <strong>Series</strong>, or <strong>Medium</strong>. Tap any book tile to open it on the Edit
+    Book screen — typically to change its status to "In progress" once you start reading it.
   </p>
 
   <h2 id="history"><span class="emoji">📖</span>History screen</h2>
@@ -198,16 +208,41 @@
   <ul>
     <li><strong>Date range finished</strong> — From / To dates.</li>
     <li><strong>Author</strong>.</li>
+    <li><strong>Series</strong>.</li>
     <li><strong>Rating</strong>.</li>
     <li><strong>Completion type</strong> — Completed or Abandoned.</li>
     <li><strong>Medium</strong>.</li>
   </ul>
   <p>Tap <strong>Clear All</strong> in the filter sheet to remove every filter and see everything again. Tap any book tile to open it on the Edit Book screen.</p>
 
+  <h2 id="series"><span class="emoji">🔖</span>Series screen</h2>
+  <p>
+    Lists every series you've tagged a book with. Tap the menu and choose <strong>Series</strong>.
+  </p>
+  <p>
+    Each one shows how many books you've added to it, and a <strong>Completed</strong> switch.
+    This is separate from any individual book's status — it's there so you can mark a whole series
+    finished once the author's actually done writing it, rather than it looking "finished" just
+    because you've read everything currently out. A series stays listed as active, even once
+    you've read every book in it, until you mark it completed yourself — handy for remembering
+    which ones you're still waiting on the next instalment for.
+  </p>
+  <p>
+    Turn on <strong>Hide completed series</strong> (shown once you have at least one) to tuck those
+    away. Tap a series' name to see every book in it, in series order, across every status — tap
+    any of those to open it on the Edit Book screen.
+  </p>
+
+  <h3>Adding a series</h3>
+  <p>
+    Use the text box and <strong>Add</strong> button at the top of this screen, or just type a new
+    name into the Series field on Add New Book or Edit Book — either way creates it.
+  </p>
+
   <h2 id="edit-book"><span class="emoji">✏️</span>Edit Book screen</h2>
   <p>
-    Opened by tapping any book tile on Home, Backlog, or History. It has the same fields as Add
-    New Book, plus:
+    Opened by tapping any book tile on Home, Backlog, History, or a series' book list. It has the
+    same fields as Add New Book, plus:
   </p>
   <ul>
     <li><strong>Status</strong> now also offers Completed and Abandoned. Choosing either one
@@ -267,9 +302,9 @@
   <h3>Import books</h3>
   <p>
     Tap <strong>Export Template CSV</strong> to get a starter file with the correct columns and
-    date format, fill it in with books you've already read, then tap
-    <strong>Import from CSV</strong> to bring them in. The app checks the file's format before
-    importing anything.
+    date format — including optional Series and Series Position columns — fill it in with books
+    you've already read, then tap <strong>Import from CSV</strong> to bring them in. The app
+    checks the file's format before importing anything.
   </p>
 
   <h3>Backup &amp; restore</h3>
