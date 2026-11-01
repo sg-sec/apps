@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RSS News Reader – Support &amp; Help</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #e5e5e5;
+    --accent: #2563eb;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #f2f2f2;
+      --muted: #a0a0a0;
+      --border: #333333;
+      --accent: #6ea8fe;
+      --card: #1a1a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 56px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  h2 .emoji {
+    margin-right: 4px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+  }
+  p, li { color: var(--text); font-size: 16px; }
+  p.intro { font-size: 16px; color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  nav.toc {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+  }
+  nav.toc p { margin: 0 0 8px; font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc li { margin-bottom: 4px; }
+  .tip {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support &amp; Help</h1>
+  <p class="subtitle">Support guide for using RSS News Reader.</p>
+
+  <p class="intro">
+    RSS News Reader gathers the latest articles from the websites, blogs and news sources you
+    follow into one simple list, newest first, with everything you've already read cleared away.
+    There's no account to create and your data stays on your phone. Everything below explains
+    what each screen does and how to use it – no technical knowledge needed. If you've never used
+    the app before, start with Getting started below.
+  </p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#getting-started">Getting started</a></li>
+      <li><a href="#home">Home screen</a></li>
+      <li><a href="#read">Read Articles screen</a></li>
+      <li><a href="#add">Add New Subscription screen</a></li>
+      <li><a href="#manage">Manage Subscriptions screen</a></li>
+      <li><a href="#settings">Settings screen</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+      <li><a href="#getting-help">Still stuck?</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="getting-started"><span class="emoji">👋</span>Getting started</h2>
+  <p>
+    The first time you open RSS News Reader, a welcome screen explains what the app does. Tap
+    <strong>Next</strong> to carry on. You won't see it again unless you reset the app from
+    Settings.
+  </p>
+  <p>
+    You'll then land on the Home screen, which is empty until you subscribe to something. Tap
+    <strong>Add a subscription</strong> to add your first feed – see the
+    <a href="#add">Add New Subscription screen</a> section for how.
+  </p>
+  <p>
+    Moving from Newsify or another feed reader? You can import all of your subscriptions at
+    once from Settings – see <a href="#settings">Import Subscriptions</a>.
+  </p>
+  <p>
+    To move between screens, open the menu by tapping the three lines in the top-left corner, or
+    by swiping in from the left edge of the screen.
+  </p>
+  <div class="tip">
+    Tip: if you'd like to group your feeds – for example News, Tech and Sport – create your
+    categories first in <a href="#settings">Settings</a>, so you can choose one as you add each
+    feed.
+  </div>
+
+  <h2 id="home"><span class="emoji">🏠</span>Home screen</h2>
+  <p>
+    This is the main screen and the one you'll use most. It lists every article you haven't read
+    yet from all of your subscriptions, newest first. Each article shows its picture (or the
+    feed's icon if it doesn't have one), headline, the name of the feed and author, and how long
+    ago it was published.
+  </p>
+
+  <h3>Reading an article</h3>
+  <p>
+    Tap an article to open it. It opens in a browser view inside the app – close it (with
+    <strong>Done</strong> or the ✕ in the corner) to come straight back to your list. Once you've
+    opened an article it counts as read and disappears from the list. You can find it again on
+    the <a href="#read">Read Articles screen</a>.
+  </p>
+
+  <h3>Clearing an article without reading it</h3>
+  <p>
+    Not interested in an article? Swipe it to the left until <strong>✓ Clear</strong> appears,
+    then let go. It's marked as read and disappears from the list without being opened. If you
+    let go before it's swiped far enough, it slides back into place and nothing changes.
+  </p>
+  <div class="tip">
+    Tip: if you use VoiceOver or TalkBack, the same option is available as the
+    <strong>Clear without reading</strong> action on each article.
+  </div>
+
+  <h3>Getting new articles</h3>
+  <p>
+    The app checks all of your feeds for new articles every time you open it. To check again at
+    any time, pull the list down from the top and let go. If any feeds couldn't be checked, a
+    short note under the filter says how many – see <a href="#troubleshooting">Troubleshooting</a>.
+  </p>
+
+  <h3>Filtering by category</h3>
+  <p>
+    Use the drop-down at the top to show only the articles from one category, or
+    <strong>Uncategorised</strong> for feeds that aren't in a category. Choose
+    <strong>All</strong> to see everything again. The drop-down only offers categories once
+    you've created some in Settings. Your choice is remembered, so Home opens on the same
+    category next time.
+  </p>
+
+  <h3>Mark all read</h3>
+  <p>
+    Tap <strong>Mark all read</strong> to clear the list in one go (you'll be asked to confirm).
+    If you're filtering by a category, only that category's articles are marked as read.
+  </p>
+  <p>
+    When there's nothing left to read, the screen tells you you're all caught up.
+  </p>
+
+  <h2 id="read"><span class="emoji">📚</span>Read Articles screen</h2>
+  <p>
+    Every article you've opened or cleared, most recently read first, so you can go back to
+    something you read earlier. Tap the menu and choose <strong>Read Articles</strong>. Each
+    article shows when you read it, and the drop-down at the top filters by category, just like
+    the Home screen.
+  </p>
+  <ul>
+    <li>Tap an article to open it again. It stays in this list.</li>
+    <li>Swipe an article to the left until <strong>Mark unread</strong> appears, then let go, to
+      send it back to the Home screen as unread. (With VoiceOver or TalkBack, use the
+      <strong>Mark as unread</strong> action.)</li>
+  </ul>
+  <p>
+    Read articles are kept for the period set under <a href="#settings">Articles</a> in Settings
+    (30 days to begin with), then deleted automatically.
+  </p>
+
+  <h2 id="add"><span class="emoji">➕</span>Add New Subscription screen</h2>
+  <p>
+    This is where you find and add new feeds. Tap the menu and choose <strong>Add New
+    Subscription</strong>. There's a single search box, and you can type either of two things
+    into it:
+  </p>
+  <ul>
+    <li><strong>A website or feed address</strong> – for example <em>bbc.co.uk/news</em> or
+      <em>arstechnica.com</em>. You don't need to know the exact address of the feed: give the
+      app any page from the website and it will find the feed the website offers.</li>
+    <li><strong>A name or topic</strong> – for example <em>BBC News</em> or <em>gardening</em>.
+      The app searches Feedly, a large public directory of news feeds, and lists matching feeds
+      with their number of followers and how often they publish.</li>
+  </ul>
+  <p>Tap <strong>Search</strong> (or the search key on your keyboard) to see the results.</p>
+
+  <h3>Subscribing</h3>
+  <p>
+    Tap a result to select it. It expands to show a category drop-down – choose a category, or
+    leave it as <strong>Uncategorised</strong> – then tap <strong>Subscribe</strong>. The feed's
+    latest articles appear on the Home screen straight away. Feeds you're already subscribed to
+    are marked <strong>✓ Subscribed</strong>.
+  </p>
+
+  <h3>If Feedly search is unavailable</h3>
+  <p>
+    Searching by name or topic needs an internet connection to Feedly. If the app can't reach
+    Feedly, a note at the top of the screen explains why; tap <strong>Retry</strong> to check
+    again. You can still add a feed by typing its website address while Feedly is unavailable.
+  </p>
+
+  <h2 id="manage"><span class="emoji">🗂️</span>Manage Subscriptions screen</h2>
+  <p>
+    A list of every feed you've subscribed to, in alphabetical order. Tap the menu and choose
+    <strong>Manage Subscriptions</strong>. Each feed shows its category and how many unread
+    articles it has. Use the drop-down at the top to show just one category.
+  </p>
+
+  <h3>Switching a feed off</h3>
+  <p>
+    Use the switch on the right to turn a feed off without removing it. While it's off, the app
+    stops checking it and its articles are hidden from the Home screen. Turn it back on and its
+    articles reappear, read or unread just as you left them.
+  </p>
+
+  <h3>Changing a feed's category, or removing it</h3>
+  <p>
+    Tap a feed to expand it. You'll see its web address, when it was last updated, and a
+    <strong>Category</strong> drop-down to move it to a different category. Tap
+    <strong>Remove subscription</strong> to delete the feed and all of its saved articles (you'll
+    be asked to confirm).
+  </p>
+  <p>
+    A feed marked <strong>⚠ Couldn't update</strong> had a problem the last time the app checked
+    it. Expand it to see what went wrong.
+  </p>
+
+  <h2 id="settings"><span class="emoji">⚙️</span>Settings screen</h2>
+  <p>
+    Tap the menu and choose <strong>Settings</strong> to personalise the app. Each section has its
+    own ⓘ icon you can tap for a quick reminder of what it does.
+  </p>
+
+  <h3>Feed Categories</h3>
+  <p>
+    Create categories to organise your feeds: type a name into the box and tap
+    <strong>Add</strong>. Tap the ✕ next to a category to delete it (you'll be asked to confirm).
+    Deleting a category doesn't delete any feeds – any feeds that were in it just become
+    uncategorised.
+  </p>
+
+  <h3>Appearance</h3>
+  <p>
+    Turn <strong>Dark mode</strong> on or off. This applies to the whole app.
+  </p>
+
+  <h3>Articles</h3>
+  <p>
+    Choose how long to keep articles you've read, from 7 days to 180 days (30 days to begin with).
+    Read articles older than this are deleted automatically, so the app doesn't keep growing.
+    Articles you haven't read are never deleted. Articles older than this period are also skipped
+    when the app checks your feeds, so they won't appear in your list.
+  </p>
+
+  <h3>Import Subscriptions</h3>
+  <p>
+    If you're moving from Newsify or another feed reader, you can bring all of your
+    subscriptions across in one go rather than adding them one by one. First, export your
+    subscriptions from the other app as an <strong>OPML file</strong> (most feed readers offer
+    this) and save it somewhere your phone can reach, such as Files or a cloud storage app.
+  </p>
+  <p>
+    Then tap <strong>Import OPML file</strong>, choose the file, check the number of feeds found,
+    and tap <strong>Import</strong>. Folders from the other app become categories, reusing any
+    category you already have with the same name. Feeds you're already subscribed to are skipped.
+    The new feeds' latest articles are fetched straight away and appear on the Home screen.
+  </p>
+  <div class="tip">
+    Tip: an import can bring in a lot of unread articles at once. If you'd rather start fresh,
+    use <strong>Mark all read</strong> on the Home screen once they've arrived.
+  </div>
+
+  <h3>Backup and Restore</h3>
+  <p>
+    RSS News Reader keeps your data only on your phone, so a backup is the only way to get it back
+    if your phone is lost, replaced or reset. The line at the top shows when you last backed up.
+  </p>
+  <p>
+    <strong>Export backup</strong> saves your subscriptions, categories, reading history and
+    settings to a file, which you can then save anywhere you like – your phone, a cloud storage
+    app, email, wherever you choose.
+  </p>
+  <p>
+    <strong>Restore backup</strong> lets you pick a previously exported file and load it back in.
+    The file is checked first, and nothing changes if it isn't a valid backup. Restoring
+    replaces everything currently in the app, so you'll be asked to confirm first.
+  </p>
+  <div class="tip">
+    Tip: backup files aren't encrypted and contain a record of the feeds you follow and the
+    articles you've read, so keep them somewhere you trust.
+  </div>
+
+  <h3>Backup Reminders</h3>
+  <p>
+    Turn on <strong>Remind me to back up</strong>, then use the − and + buttons with
+    <strong>weeks</strong>, <strong>months</strong> or <strong>years</strong> to choose how often
+    (for example, every 2 weeks). The date of the next reminder is shown underneath. When a backup
+    is due, the app shows a reminder the next time you open it: tap <strong>Backup</strong> to
+    back up there and then, or <strong>Skip This Time</strong> to be reminded again after the next
+    interval. These reminders appear inside the app only – they aren't phone notifications.
+  </p>
+
+  <h3>App Reset</h3>
+  <p>
+    <strong>Reset all data</strong> completely wipes the app – your subscriptions, categories,
+    articles and reading history – and returns every setting to its default, then shows the
+    welcome screen again. This cannot be undone, so the app first offers to make a backup, then
+    asks you to confirm.
+  </p>
+
+  <h3>About</h3>
+  <p>
+    Contains a link to our full <a href="./privacy-policy.html">Privacy Policy</a>, which
+    explains in detail how your data is (and isn't) handled, and a link back to this page.
+  </p>
+
+  <h2 id="troubleshooting"><span class="emoji">🔧</span>Troubleshooting</h2>
+
+  <h3>"No feeds found" when I type a website address</h3>
+  <p>
+    Not every website publishes a news feed. Try the website's home page rather than a specific
+    article, or search for the website by name instead so Feedly can suggest its feed.
+  </p>
+
+  <h3>"Feeds couldn't be updated" on the Home screen</h3>
+  <p>
+    The app couldn't reach one or more of your feeds the last time it checked. Usually this is
+    because your phone is offline or the website is temporarily down – pull down on the Home
+    screen to try again later. If the same feed keeps failing, open
+    <a href="#manage">Manage Subscriptions</a> and tap the feed marked
+    <strong>⚠ Couldn't update</strong> to see why. If the website has moved its feed, remove the
+    subscription and add the website again.
+  </p>
+
+  <h3>An article I'd read has disappeared</h3>
+  <p>
+    That's expected: read articles are removed from the Home screen straight away and move to the
+    <a href="#read">Read Articles screen</a>, where you can open them again or mark them as
+    unread. They're deleted altogether once they're older than the period set under
+    <strong>Articles</strong> in Settings.
+  </p>
+
+  <h2 id="getting-help"><span class="emoji">💬</span>Still stuck?</h2>
+  <div class="card">
+    <p>
+      If something in the app isn't working the way this guide describes, or you have a question
+      that isn't answered here, please get in touch at
+      <a href="mailto:sgsec@tutanota.com">sgsec@tutanota.com</a>.
+    </p>
+  </div>
+</main>
+</body>
+</html>
